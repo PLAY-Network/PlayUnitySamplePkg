@@ -1,5 +1,5 @@
 ﻿{
-  "name": "io.getready.rgn.sample",
+  "name": "io.play.unity.sample",
   "displayName": "PLAY SDK. Sample",
   "version": "0.16.0",
   "unity": "2020.3",
@@ -26,17 +26,17 @@
   ],
   "type": "sample",
   "dependencies": {
-    "io.getready.rgn.core": "0.16.0",
-    "io.getready.rgn.achievement": "0.16.0",
-    "io.getready.rgn.currency": "0.16.0",
-    "io.getready.rgn.gameprogress": "0.16.0",
-    "io.getready.rgn.inventory": "0.16.0",
-    "io.getready.rgn.matchmaking": "0.16.0",
-    "io.getready.rgn.messaging": "0.16.0",
-    "io.getready.rgn.signin.email": "0.16.0",
-    "io.getready.rgn.signin.guest": "0.16.0",
-    "io.getready.rgn.userprofile": "0.16.0",
-    "io.getready.rgn.virtualitems": "0.16.0",
-    "io.getready.rgn.wallets": "0.16.0"
+    "io.play.unity.core": "0.16.0",
+    "io.play.unity.achievement": "0.16.0",
+    "io.play.unity.currency": "0.16.0",
+    "io.play.unity.gameprogress": "0.16.0",
+    "io.play.unity.inventory": "0.16.0",
+    "io.play.unity.matchmaking": "0.16.0",
+    "io.play.unity.messaging": "0.16.0",
+    "io.play.unity.signin.email": "0.16.0",
+    "io.play.unity.signin.guest": "0.16.0",
+    "io.play.unity.userprofile": "0.16.0",
+    "io.play.unity.virtualitems": "0.16.0",
+    "io.play.unity.wallets": "0.16.0"
   }
 }
