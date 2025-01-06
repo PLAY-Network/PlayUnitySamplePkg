@@ -1,2 +1,2 @@
 # Play SDK Sample
-Package version: 0.16.0-dev.4
+Package version: 0.16.0-dev.5
