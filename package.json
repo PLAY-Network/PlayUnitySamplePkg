@@ -1,5 +1,5 @@
 ﻿{
-  "name": "io.play.unity.sample",
+  "name": "network.theplay.unity.sample",
   "displayName": "PLAY SDK. Sample",
   "version": "0.16.0",
   "unity": "2020.3",
@@ -26,17 +26,17 @@
   ],
   "type": "sample",
   "dependencies": {
-    "io.play.unity.core": "0.16.0",
-    "io.play.unity.achievement": "0.16.0",
-    "io.play.unity.currency": "0.16.0",
-    "io.play.unity.gameprogress": "0.16.0",
-    "io.play.unity.inventory": "0.16.0",
-    "io.play.unity.matchmaking": "0.16.0",
-    "io.play.unity.messaging": "0.16.0",
-    "io.play.unity.signin.email": "0.16.0",
-    "io.play.unity.signin.guest": "0.16.0",
-    "io.play.unity.userprofile": "0.16.0",
-    "io.play.unity.virtualitems": "0.16.0",
-    "io.play.unity.wallets": "0.16.0"
+    "network.theplay.unity.core": "0.16.0",
+    "network.theplay.unity.achievement": "0.16.0",
+    "network.theplay.unity.currency": "0.16.0",
+    "network.theplay.unity.gameprogress": "0.16.0",
+    "network.theplay.unity.inventory": "0.16.0",
+    "network.theplay.unity.matchmaking": "0.16.0",
+    "network.theplay.unity.messaging": "0.16.0",
+    "network.theplay.unity.signin.email": "0.16.0",
+    "network.theplay.unity.signin.guest": "0.16.0",
+    "network.theplay.unity.userprofile": "0.16.0",
+    "network.theplay.unity.virtualitems": "0.16.0",
+    "network.theplay.unity.wallets": "0.16.0"
   }
 }
