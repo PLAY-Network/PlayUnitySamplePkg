@@ -45,12 +45,6 @@ namespace RGN.Sample
 
             Debug.Log("Actual Products data was loaded");
         }
-
-        public async void PurchaseProduct(string productId)
-        {
-            OnCurrencyDataUpdated?.Invoke(await CurrencyModule.I.PurchaseCurrencyProductAsync(productId));
-        }
-
         public Currency GetCurrency(string currencyName)
         {
             Currency firebaseCurrency = currencies.Find(x => x.name == currencyName);

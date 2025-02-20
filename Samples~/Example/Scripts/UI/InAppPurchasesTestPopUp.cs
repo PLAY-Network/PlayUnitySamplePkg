@@ -45,22 +45,22 @@ namespace RGN.Sample.UI
 
         private async Task InitPurchasesAsync()
         {
-            CurrencyProductsData productsData = await CurrencyModule.I.GetInAppPurchaseCurrencyDataAsync();
+            //CurrencyProductsData productsData = await CurrencyModule.I.GetInAppPurchaseCurrencyDataAsync();
 
-            foreach (CurrencyProduct product in productsData.products)
-            {
-                //TODO: you have to register your products in Unity IAP ConfigurationBuilder,
-                // use "product.type" to determine Consumable/Non-Consumable products
+            //foreach (CurrencyProduct product in productsData.products)
+            //{
+            //    //TODO: you have to register your products in Unity IAP ConfigurationBuilder,
+            //    // use "product.type" to determine Consumable/Non-Consumable products
 
-                GameObject itemGO = Instantiate(itemTemplate, itemContent);
-                itemGO.SetActive(true);
+            //    GameObject itemGO = Instantiate(itemTemplate, itemContent);
+            //    itemGO.SetActive(true);
 
-                InAppPurchasesTestPopUpItem item = itemGO.GetComponent<InAppPurchasesTestPopUpItem>();
-                item.Init(product);
-                item.OnBuyButtonClick += OnBuyProductButtonClickAsync;
+            //    InAppPurchasesTestPopUpItem item = itemGO.GetComponent<InAppPurchasesTestPopUpItem>();
+            //    item.Init(product);
+            //    item.OnBuyButtonClick += OnBuyProductButtonClickAsync;
 
-                items.Add(item);
-            }
+            //    items.Add(item);
+            //}
         }
 
         private void OnBuyRGNCoinButtonClick()
@@ -74,23 +74,23 @@ namespace RGN.Sample.UI
             //TODO: you need to Call IAP purchase method from Unity IAP Package,
             // use OnSuccefullPurchase event of IAP Package for calling of our PurchaseProduct method,
             // we don't do purchase validation on your side
-            var currencies = await CurrencyModule.I.PurchaseCurrencyProductAsync(productId);
+            //var currencies = await CurrencyModule.I.PurchaseCurrencyProductAsync(productId);
 
-            string result = "";
+            //string result = "";
 
-            foreach (Currency currency in currencies)
-            {
-                result += "\n" + currency.name + " : " + currency.quantity.ToString();
-            }
+            //foreach (Currency currency in currencies)
+            //{
+            //    result += "\n" + currency.name + " : " + currency.quantity.ToString();
+            //}
 
-            PopupMessage popupMessage = new PopupMessage() {
-                Message = $"currency data : {result}"
-            };
-            GenericPopup genericPopup = UIRoot.singleton.GetPopup<GenericPopup>();
-            genericPopup.ShowMessage(popupMessage);
-            UIRoot.singleton.ShowPopup<GenericPopup>();
+            //PopupMessage popupMessage = new PopupMessage() {
+            //    Message = $"currency data : {result}"
+            //};
+            //GenericPopup genericPopup = UIRoot.singleton.GetPopup<GenericPopup>();
+            //genericPopup.ShowMessage(popupMessage);
+            //UIRoot.singleton.ShowPopup<GenericPopup>();
 
-            UIRoot.singleton.HidePopup<SpinnerPopup>();
+            //UIRoot.singleton.HidePopup<SpinnerPopup>();
         }
 
         public async void OnBuyRGNCoinAsync(string iapUUID)
